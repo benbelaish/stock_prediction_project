@@ -50,7 +50,7 @@ stock-prediction-project/
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/stock-prediction-project.git
+git clone https://github.com/benbelaish/stock-prediction-project.git
 
 # Install dependencies
 pip install -r requirements.txt
@@ -78,7 +78,7 @@ As concluded in the analysis:
 
 Project by Ben Belaish, a data analyst with focus on financial markets and predictive modeling.
 
-**Contact**: [benbelaish123@gmail.com](mailto:benbelaish123@gmail.com)
+**Contact**: [benbelaish123@gmail.com]
 
 ---
 
