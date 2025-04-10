@@ -6,7 +6,7 @@ seaborn>=0.11.0
 
 # Machine learning
 scikit-learn>=1.0.0
-tensorflow>
+tensorflow
 
 # NLP tools
 nltk>=3.6.0
