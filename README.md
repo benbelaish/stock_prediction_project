@@ -1,5 +1,3 @@
-<div dir="ltr">
-
 # Stock Price Prediction with News Sentiment Analysis
 
 A data science project predicting Microsoft stock movements using machine learning models enhanced with financial news sentiment analysis.
@@ -9,7 +7,7 @@ A data science project predicting Microsoft stock movements using machine learni
 This project combines stock market data with financial news headlines to predict price movements using:
 - Traditional ML models (Logistic Regression, Random Forest)
 - Deep learning (LSTM neural networks)
-- News headline sentiment analysisש
+- News headline sentiment analysis
 
 ## 🔍 Key Findings
 
@@ -40,24 +38,26 @@ stock-prediction-project/
 │   ├── cnbc_headlines.csv     # CNBC news headlines
 │   ├── guardian_headlines.csv # Guardian news headlines
 │   └── reuters_headlines.csv  # Reuters news headlines
-├── notebooks/                 # Analysis code
-│   └── stocks_final_project.py
+├── Notebooks/                 # Analysis code
+│   └── Final_Project.ipynb    # Main Jupyter notebook
 ├── README.md                  # Project documentation
 └── requirements.txt           # Dependencies
 ```
 
-## 🚀 Setup
+## 🚀 Setup and Running
 
 ```bash
 # Clone repository
-git clone https://github.com/benbelaish/stock-prediction-project.git
+git clone https://github.com/benbelaish/stock_prediction_project.git
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run analysis
-python notebooks/stocks_final_project.py
+# Run analysis (using JupyterLab)
+python -m jupyterlab
 ```
+
+After JupyterLab launches, navigate to the Notebooks directory and open the Final_Project.ipynb file.
 
 ## 📈 Key Insights
 
@@ -76,13 +76,10 @@ As concluded in the analysis:
 
 ## 👨‍💻 About Me
 
-Project by Ben Belaish, a data analyst with focus on financial markets and predictive modeling.
+Project by Ben Belaish, a data analyst focusing on financial markets and predictive modeling.
 
-**Contact**: [benbelaish123@gmail.com]
+Contact: [benbelaish123@gmail.com]
 
 ---
 
 *This project is for educational purposes only and should not be used for investment decisions.*
-
-
-<div dir="ltr">
