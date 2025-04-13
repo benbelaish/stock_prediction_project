@@ -1,8 +1,8 @@
-# Stock Price Prediction with Financial News Sentiment Analysis
+# 📈 Stock Price Prediction with Financial News Sentiment Analysis
 
 A data science project exploring how financial news sentiment can enhance traditional stock price prediction models, focusing on Microsoft stock movements.
 
-## Project Overview
+## 🔍 Project Overview
 
 This project implements a complete machine learning pipeline that:
 - Combines market data with financial news headlines
@@ -10,7 +10,7 @@ This project implements a complete machine learning pipeline that:
 - Evaluates the impact of sentiment analysis on prediction accuracy
 - Demonstrates advanced time-series analysis techniques
 
-## Key Findings
+## 📊 Key Findings
 
 | Model | Without Sentiment | With Sentiment |
 |-------|-------------------|----------------|
@@ -19,12 +19,12 @@ This project implements a complete machine learning pipeline that:
 | LSTM | 95.28% | 95.38% |
 
 **Insights:**
-- LSTM networks demonstrated superior performance for price prediction
+- LSTM networks demonstrated superior performance for price prediction (95% accuracy)
 - Logistic Regression performed surprisingly well for trend classification
 - News sentiment had minimal impact on prediction accuracy
 - Time-series analysis proved most effective for forecasting
 
-## Technologies
+## 🛠️ Technologies
 
 - Python (3.8-3.11)
 - pandas, numpy for data manipulation
@@ -34,7 +34,7 @@ This project implements a complete machine learning pipeline that:
 - yfinance for market data
 - Matplotlib, Seaborn for visualization
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 stock-prediction-project/
@@ -45,7 +45,7 @@ stock-prediction-project/
 └── requirements.txt           # Dependencies
 ```
 
-## Setup and Usage
+## 🚀 Setup and Usage
 
 ### Requirements
 - Python 3.8-3.11 (TensorFlow compatibility requirement)
@@ -66,7 +66,7 @@ python -m jupyterlab
 
 After launching JupyterLab, navigate to the Notebooks directory and open Final_Project.ipynb.
 
-## Implementation Details
+## 💡 Implementation Highlights
 
 The analysis follows these key steps:
 1. Data acquisition (stock prices and news headlines)
@@ -75,7 +75,7 @@ The analysis follows these key steps:
 4. Model training and evaluation
 5. Comparative analysis of results
 
-## About the Author
+## 👨‍💻 About the Author
 
 Ben Belaish - Data Analyst specializing in financial markets and predictive modeling.
 
