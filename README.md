@@ -1,15 +1,16 @@
-# Stock Price Prediction with News Sentiment Analysis
+# Stock Price Prediction with Financial News Sentiment Analysis
 
-A data science project predicting Microsoft stock movements using machine learning models enhanced with financial news sentiment analysis.
+A data science project exploring how financial news sentiment can enhance traditional stock price prediction models, focusing on Microsoft stock movements.
 
-## 📊 Overview
+## Project Overview
 
-This project combines stock market data with financial news headlines to predict price movements using:
-- Traditional ML models (Logistic Regression, Random Forest)
-- Deep learning (LSTM neural networks)
-- News headline sentiment analysis
+This project implements a complete machine learning pipeline that:
+- Combines market data with financial news headlines
+- Compares traditional ML models with deep learning approaches
+- Evaluates the impact of sentiment analysis on prediction accuracy
+- Demonstrates advanced time-series analysis techniques
 
-## 🔍 Key Findings
+## Key Findings
 
 | Model | Without Sentiment | With Sentiment |
 |-------|-------------------|----------------|
@@ -17,68 +18,68 @@ This project combines stock market data with financial news headlines to predict
 | Random Forest | 52.94% | 50.98% |
 | LSTM | 95.28% | 95.38% |
 
-- LSTM models significantly outperformed traditional methods for precise price prediction
+**Insights:**
+- LSTM networks demonstrated superior performance for price prediction
 - Logistic Regression performed surprisingly well for trend classification
-- News sentiment had minimal impact on prediction accuracy (slightly decreased performance for Logistic Regression and Random Forest)
-- Time-series analysis proved most effective for price forecasting
+- News sentiment had minimal impact on prediction accuracy
+- Time-series analysis proved most effective for forecasting
 
-## 🛠️ Technologies
+## Technologies
 
-- Python, pandas, numpy
-- scikit-learn, TensorFlow
-- NLTK for headline processing
+- Python (3.8-3.11)
+- pandas, numpy for data manipulation
+- scikit-learn for traditional ML models
+- TensorFlow for LSTM implementation
+- NLTK for sentiment analysis
 - yfinance for market data
 - Matplotlib, Seaborn for visualization
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 stock-prediction-project/
 ├── data/                      # News headlines datasets
-│   ├── cnbc_headlines.csv     # CNBC news headlines
-│   ├── guardian_headlines.csv # Guardian news headlines
-│   └── reuters_headlines.csv  # Reuters news headlines
 ├── Notebooks/                 # Analysis code
-│   └── Final_Project.ipynb    # Main Jupyter notebook
-├── README.md                  # Project documentation
+│   └── Final_Project.ipynb    # Main notebook
+├── README.md                  # Documentation
 └── requirements.txt           # Dependencies
 ```
 
-## 🚀 Setup and Running
+## Setup and Usage
+
+### Requirements
+- Python 3.8-3.11 (TensorFlow compatibility requirement)
+
+### Installation
 
 ```bash
 # Clone repository
 git clone https://github.com/benbelaish/stock_prediction_project.git
+cd stock_prediction_project
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run analysis (using JupyterLab)
+# Run the analysis
 python -m jupyterlab
 ```
 
-After JupyterLab launches, navigate to the Notebooks directory and open the Final_Project.ipynb file.
+After launching JupyterLab, navigate to the Notebooks directory and open Final_Project.ipynb.
 
-## 📈 Key Insights
+## Implementation Details
 
-Based on model performance:
+The analysis follows these key steps:
+1. Data acquisition (stock prices and news headlines)
+2. Text preprocessing and sentiment extraction
+3. Feature engineering and model preparation
+4. Model training and evaluation
+5. Comparative analysis of results
 
-- **LSTM Superior for Price Forecasting**: With ~95% accuracy, the LSTM model shows excellent capability for precise price prediction.
-- **Effective Feature Set**: Using Open, Close, High, Low, and Volume as features provides good predictive power.
-- **Classical vs Deep Learning**: While LSTM excels at exact value prediction, Logistic Regression is effective for trend direction.
-- **Sentiment Analysis Limitations**: The sentiment analysis approach used didn't significantly improve prediction accuracy, suggesting either that:
-  - News sentiment isn't a strong predictor for this specific stock
-  - Our sentiment extraction method needs refinement
-  - The time window for sentiment impact may need adjustment
+## About the Author
 
-As concluded in the analysis:
-> "LSTM model is good at predicting exact values, while classical models are good at predicting trends. Using multiple models together can give a more complete picture."
+Ben Belaish - Data Analyst specializing in financial markets and predictive modeling.
 
-## 👨‍💻 About Me
-
-Project by Ben Belaish, a data analyst focusing on financial markets and predictive modeling.
-
-Contact: [benbelaish123@gmail.com]
+Contact: benbelaish123@gmail.com
 
 ---
 
