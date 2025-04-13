@@ -1,16 +1,15 @@
-# 📈 Stock Price Prediction with Financial News Sentiment Analysis
+# Stock Price Prediction with News Sentiment Analysis
 
-A data science project exploring how financial news sentiment can enhance traditional stock price prediction models, focusing on Microsoft stock movements.
+A data science project examining how financial news sentiment impacts stock price prediction models for Microsoft.
 
-## 🔍 Project Overview
+## 📊 Overview
 
-This project implements a complete machine learning pipeline that:
-- Combines market data with financial news headlines
-- Compares traditional ML models with deep learning approaches
-- Evaluates the impact of sentiment analysis on prediction accuracy
-- Demonstrates advanced time-series analysis techniques
+This project combines stock market data with financial news sentiment to predict price movements using:
+- Traditional ML models (Logistic Regression, Random Forest)
+- Deep learning (LSTM neural networks)
+- News headline sentiment analysis
 
-## 📊 Key Findings
+## 🔍 Key Findings
 
 | Model | Without Sentiment | With Sentiment |
 |-------|-------------------|----------------|
@@ -18,62 +17,78 @@ This project implements a complete machine learning pipeline that:
 | Random Forest | 52.94% | 50.98% |
 | LSTM | 95.28% | 95.38% |
 
-**Insights:**
-- LSTM networks demonstrated superior performance for price prediction (95% accuracy)
-- Logistic Regression performed surprisingly well for trend classification
+- LSTM significantly outperformed traditional methods for price prediction
 - News sentiment had minimal impact on prediction accuracy
-- Time-series analysis proved most effective for forecasting
+- Time-series features were the strongest predictors of price movements
+
+## 📋 Methodology
+
+The project follows a systematic approach to analyze financial data and sentiment:
+
+### 1. Data Acquisition & Preprocessing
+- **Market Data**: Daily OHLCV data from yfinance
+- **News Data**: Headlines from CNBC, Guardian, and Reuters
+- **Preprocessing**: Datetime standardization and feature engineering 
+
+### 2. Traditional ML Approach
+- Feature selection (Open, Close, Low, High, Volume)
+- Train/test split (80/20) preserving time order
+- StandardScaler normalization
+- Logistic Regression and Random Forest models for trend prediction
+
+### 3. LSTM Implementation
+- 5-day window sequence creation
+- Two-layer LSTM with dropout for regularization
+- Adam optimizer with early stopping
+- MAPE (Mean Absolute Percentage Error) for evaluation
+
+### 4. Sentiment Analysis
+- Text preprocessing with NLTK (tokenization, lemmatization, stopwords)
+- Unsupervised sentiment scoring using a pre-trained LSTM
+- Daily sentiment aggregation and feature integration
+
+### 5. Comparative Evaluation
+- Cross-model performance comparison with and without sentiment
+- Overfitting assessment using train vs. test accuracy
+- Final analysis of sentiment contribution to prediction accuracy
 
 ## 🛠️ Technologies
 
-- Python (3.8-3.11)
-- pandas, numpy for data manipulation
-- scikit-learn for traditional ML models
-- TensorFlow for LSTM implementation
-- NLTK for sentiment analysis
+- Python 3.8-3.11
+- pandas, numpy, matplotlib, seaborn
+- scikit-learn, TensorFlow
+- NLTK for text processing
 - yfinance for market data
-- Matplotlib, Seaborn for visualization
 
 ## 📂 Project Structure
 
 ```
 stock-prediction-project/
-├── data/                      # News headlines datasets
+├── Data/                      # News headlines datasets
 ├── Notebooks/                 # Analysis code
-│   └── Final_Project.ipynb    # Main notebook
-├── README.md                  # Documentation
+│   └── stocks_final_project.py
+├── README.md
 └── requirements.txt           # Dependencies
 ```
 
 ## 🚀 Setup and Usage
 
-### Requirements
-- Python 3.8-3.11 (TensorFlow compatibility requirement)
-
-### Installation
-
 ```bash
 # Clone repository
 git clone https://github.com/benbelaish/stock_prediction_project.git
-cd stock_prediction_project
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the analysis
+# Run the analysis with JupyterLab
 python -m jupyterlab
 ```
 
-After launching JupyterLab, navigate to the Notebooks directory and open Final_Project.ipynb.
+Navigate to the Notebooks directory and open the main analysis file.
 
-## 💡 Implementation Highlights
+## ⚠️ Methodological Note
 
-The analysis follows these key steps:
-1. Data acquisition (stock prices and news headlines)
-2. Text preprocessing and sentiment extraction
-3. Feature engineering and model preparation
-4. Model training and evaluation
-5. Comparative analysis of results
+Results may vary slightly between different environments (local Jupyter vs. Google Colab) due to probabilistic algorithms and library versions, but conclusions remain consistent.
 
 ## 👨‍💻 About the Author
 
@@ -83,4 +98,4 @@ Contact: benbelaish123@gmail.com
 
 ---
 
-*This project is for educational purposes only and should not be used for investment decisions.*
+*This project is for educational purposes only.*
